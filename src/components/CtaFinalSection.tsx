@@ -1,5 +1,5 @@
 const CtaFinalSection = () => (
-  <section id="cta-final" className="py-16 md:py-24 bg-cta-gradient text-primary-foreground text-center">
+  <section id="cta-final" className="py-16 md:py-24 bg-cta-gradient text-foreground text-center">
     <div className="container max-w-2xl">
       <h2 className="font-heading text-3xl sm:text-4xl font-extrabold mb-4">
         🎯 SIM, QUERO DOMINAR CAJÓN EM 30 DIAS
@@ -21,7 +21,7 @@ const CtaFinalSection = () => (
 
       <a
         href="#comprar"
-        className="block max-w-xl mx-auto bg-card text-primary font-heading font-extrabold text-xl sm:text-2xl px-10 py-6 rounded-lg hover:scale-105 transition-transform uppercase animate-pulse-glow"
+        className="block max-w-xl mx-auto bg-primary text-primary-foreground font-heading font-extrabold text-xl sm:text-2xl px-10 py-6 rounded-lg shadow-cta hover:scale-105 transition-transform uppercase animate-pulse-glow"
       >
         🔥 GARANTIR MINHA VAGA AGORA - R$ 147 🔥
       </a>

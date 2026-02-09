@@ -91,7 +91,7 @@ const fases: FaseData[] = [
 
 const FaseCard = ({ fase, index }: { fase: FaseData; index: number }) => (
   <motion.div
-    className="border-2 border-border rounded-lg mb-8 overflow-hidden bg-card hover:shadow-lg transition-shadow"
+    className="bg-card card-glow rounded-lg mb-8 overflow-hidden transition-all"
     initial={{ opacity: 0, y: 30 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-50px" }}

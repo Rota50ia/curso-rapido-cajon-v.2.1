@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import heroImage from "@/assets/hero-cajon.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -8,13 +7,9 @@ const fadeUp = {
 
 const HeroSection = () => (
   <section className="relative min-h-[90vh] flex items-center justify-center bg-hero-gradient overflow-hidden">
-    <div
-      className="absolute inset-0 bg-cover bg-center opacity-20"
-      style={{ backgroundImage: `url(${heroImage})` }}
-    />
-    <div className="absolute inset-0 bg-black/30" />
+    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,hsl(18_100%_60%/0.08)_0%,transparent_60%)]" />
     <motion.div
-      className="relative z-10 container text-center text-primary-foreground py-16 md:py-24"
+      className="relative z-10 container text-center py-16 md:py-24"
       initial="hidden"
       animate="visible"
       variants={{ visible: { transition: { staggerChildren: 0.15 } } }}
@@ -27,13 +22,13 @@ const HeroSection = () => (
       </motion.div>
       <motion.h1
         variants={fadeUp}
-        className="font-heading text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight mb-6 max-w-4xl mx-auto"
+        className="font-heading text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight mb-6 max-w-4xl mx-auto text-foreground"
       >
         Sabe aquele momento que você tá vendo alguém tocar cajón e pensa:
         <br />
-        <span className="italic text-secondary">"Cara, eu TAMBÉM queria fazer isso..."</span>
+        <span className="italic text-primary">"Cara, eu TAMBÉM queria fazer isso..."</span>
       </motion.h1>
-      <motion.p variants={fadeUp} className="text-xl sm:text-2xl mb-8 opacity-95">
+      <motion.p variants={fadeUp} className="text-xl sm:text-2xl mb-8 text-muted-foreground">
         30 aulas. 30 dias. Do zero ao palco.
       </motion.p>
       <motion.a

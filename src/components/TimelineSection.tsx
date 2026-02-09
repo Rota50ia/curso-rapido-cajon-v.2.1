@@ -9,27 +9,27 @@ const items = [
 ];
 
 const TimelineSection = () => (
-  <section className="py-16 md:py-24 bg-primary text-primary-foreground">
+  <section className="py-16 md:py-24 bg-secondary">
     <div className="container">
-      <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-12">
+      <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-12 text-foreground">
         O Que Acontece (Timeline Real de 30 Dias)
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-10">
         {items.map((item, i) => (
           <motion.div
             key={i}
-            className="text-center p-6 bg-white/10 rounded-lg"
+            className="text-center p-6 bg-card card-glow rounded-lg"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
           >
-            <div className="text-3xl font-bold font-heading mb-3">{item.dia}</div>
-            <p className="text-sm opacity-95">{item.text}</p>
+            <div className="text-3xl font-bold font-heading mb-3 text-primary">{item.dia}</div>
+            <p className="text-sm text-muted-foreground">{item.text}</p>
           </motion.div>
         ))}
       </div>
-      <p className="text-center text-lg">
+      <p className="text-center text-lg text-foreground">
         Não to inventando. <strong>97% completam</strong> porque a sequência é VICIANTE (cada aula desbloqueia a próxima).
       </p>
     </div>

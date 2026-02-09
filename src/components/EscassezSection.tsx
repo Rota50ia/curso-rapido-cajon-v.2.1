@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 const EscassezSection = () => (
-  <section className="py-16 md:py-24 bg-escassez text-primary-foreground text-center">
+  <section className="py-16 md:py-24 bg-escassez text-foreground text-center">
     <div className="container max-w-2xl">
       <h2 className="font-heading text-3xl sm:text-4xl font-bold mb-8">Última Coisa (Importante)</h2>
       <p className="text-lg mb-4">
@@ -12,7 +12,7 @@ const EscassezSection = () => (
         pessoas, eu não consigo dar atenção individualizada pra todo mundo.
       </p>
       <motion.div
-        className="bg-white/10 p-10 rounded-lg"
+        className="bg-card card-glow rounded-lg p-10"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}

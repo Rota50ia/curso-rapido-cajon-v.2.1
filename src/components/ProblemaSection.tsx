@@ -23,7 +23,7 @@ const ProblemaSection = () => (
           <motion.div
             key={i}
             variants={fadeIn}
-            className="bg-muted p-8 rounded-lg text-center"
+            className="bg-card card-glow rounded-lg p-8 text-center"
           >
             <div className="text-5xl mb-4">{item.icon}</div>
             <p className="text-foreground">{item.text}</p>

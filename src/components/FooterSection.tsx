@@ -1,5 +1,5 @@
 const FooterSection = () => (
-  <footer className="bg-foreground text-primary-foreground py-12 text-center">
+  <footer className="bg-card text-foreground py-12 text-center border-t border-border">
     <div className="container">
       <h3 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Edilson Morais</h3>
       <p className="text-base mb-1">40 anos tocando. 217 alunos transformados.</p>
@@ -16,7 +16,7 @@ const FooterSection = () => (
         <span>|</span>
         <a href="#privacidade" className="hover:text-primary transition-colors">Política de Privacidade</a>
       </div>
-      <p className="text-xs text-muted-foreground pt-4 border-t border-white/10">
+      <p className="text-xs text-muted-foreground pt-4 border-t border-border">
         Todos os direitos reservados – Edilson Morais 2026
       </p>
     </div>
