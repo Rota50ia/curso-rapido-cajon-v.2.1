@@ -1,14 +1,35 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import HeroSection from "@/components/HeroSection";
+import ProblemaSection from "@/components/ProblemaSection";
+import MetaforaSection from "@/components/MetaforaSection";
+import FasesSection from "@/components/FasesSection";
+import TimelineSection from "@/components/TimelineSection";
+import ConfessionalSection from "@/components/ConfessionalSection";
+import PorqueSection from "@/components/PorqueSection";
+import PacoteSection from "@/components/PacoteSection";
+import GarantiaSection from "@/components/GarantiaSection";
+import DepoimentosSection from "@/components/DepoimentosSection";
+import EscassezSection from "@/components/EscassezSection";
+import CtaFinalSection from "@/components/CtaFinalSection";
+import PsSection from "@/components/PsSection";
+import FooterSection from "@/components/FooterSection";
 
-const Index = () => {
-  return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
-  );
-};
+const Index = () => (
+  <main>
+    <HeroSection />
+    <ProblemaSection />
+    <MetaforaSection />
+    <FasesSection />
+    <TimelineSection />
+    <ConfessionalSection />
+    <PorqueSection />
+    <PacoteSection />
+    <GarantiaSection />
+    <DepoimentosSection />
+    <EscassezSection />
+    <CtaFinalSection />
+    <PsSection />
+    <FooterSection />
+  </main>
+);
 
 export default Index;
