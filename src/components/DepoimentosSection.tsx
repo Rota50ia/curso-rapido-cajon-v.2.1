@@ -25,7 +25,7 @@ const DepoimentosSection = () => (
         {testimonials.map((t, i) => (
           <motion.div
             key={i}
-            className="bg-muted p-8 rounded-lg shadow-sm"
+            className="bg-card card-glow rounded-lg p-8"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}

@@ -4,50 +4,50 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 10%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 10%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 10%;
+    --background: 240 10% 4%;
+    --foreground: 0 0% 95%;
+    --card: 240 6% 9%;
+    --card-foreground: 0 0% 95%;
+    --popover: 240 6% 9%;
+    --popover-foreground: 0 0% 95%;
     --primary: 18 100% 60%;
     --primary-foreground: 0 0% 100%;
-    --primary-dark: 18 85% 41%;
-    --secondary: 45 100% 95%;
-    --secondary-foreground: 0 0% 13%;
-    --muted: 30 10% 96%;
-    --muted-foreground: 0 0% 40%;
+    --primary-dark: 18 85% 45%;
+    --secondary: 240 5% 12%;
+    --secondary-foreground: 0 0% 75%;
+    --muted: 240 5% 14%;
+    --muted-foreground: 0 0% 50%;
     --accent: 122 46% 33%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 122 41% 93%;
-    --destructive: 0 84.2% 60.2%;
+    --accent-light: 122 20% 10%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
-    --border: 30 15% 90%;
-    --input: 30 15% 90%;
+    --border: 240 5% 18%;
+    --input: 240 5% 18%;
     --ring: 18 100% 60%;
     --radius: 0.75rem;
 
-    /* Phase colors */
-    --fase-1: 25 100% 92%;
-    --fase-2: 45 100% 95%;
-    --fase-3: 122 60% 93%;
-    --fase-4: 210 80% 95%;
-    --fase-5: 270 60% 95%;
-    --fase-6: 0 80% 95%;
+    /* Phase colors – dark tinted */
+    --fase-1: 25 40% 10%;
+    --fase-2: 45 30% 10%;
+    --fase-3: 122 25% 10%;
+    --fase-4: 210 30% 12%;
+    --fase-5: 270 25% 12%;
+    --fase-6: 0 30% 12%;
 
-    /* Custom shadows */
-    --shadow-cta: 0 4px 20px hsl(18 100% 60% / 0.35);
-    --shadow-cta-hover: 0 8px 30px hsl(18 100% 60% / 0.45);
+    /* CTA shadows */
+    --shadow-cta: 0 4px 20px hsl(18 100% 60% / 0.25);
+    --shadow-cta-hover: 0 8px 30px hsl(18 100% 60% / 0.4);
 
-    /* Sidebar (unused but keeping defaults) */
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Sidebar defaults */
+    --sidebar-background: 240 6% 9%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 0 0% 95%;
+    --sidebar-primary-foreground: 240 6% 9%;
+    --sidebar-accent: 240 5% 14%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 240 5% 18%;
+    --sidebar-ring: 18 100% 60%;
   }
 }
 
@@ -66,19 +66,35 @@
   }
 }
 
+@layer components {
+  .card-glow {
+    border: 1px solid hsl(var(--border));
+    box-shadow:
+      0 0 20px -5px hsl(18 100% 60% / 0.06),
+      0 0 40px -10px hsl(270 50% 50% / 0.04);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card-glow:hover {
+    border-color: hsl(18 100% 60% / 0.25);
+    box-shadow:
+      0 0 25px -5px hsl(18 100% 60% / 0.12),
+      0 0 50px -10px hsl(270 50% 50% / 0.08);
+  }
+}
+
 @layer utilities {
   .text-gradient-hero {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(25 100% 75%) 100%);
+    background-image: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 70%) 100%);
   }
   .bg-hero-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary-dark)) 0%, hsl(var(--primary)) 100%);
+    background: linear-gradient(180deg, hsl(240 10% 7%) 0%, hsl(var(--background)) 100%);
   }
   .bg-cta-gradient {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--primary-dark)) 100%);
+    background: linear-gradient(180deg, hsl(240 10% 7%) 0%, hsl(240 10% 3%) 100%);
   }
   .bg-escassez {
-    background-color: hsl(var(--primary-dark));
+    background-color: hsl(240 10% 6%);
   }
   .shadow-cta {
     box-shadow: var(--shadow-cta);

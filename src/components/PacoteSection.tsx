@@ -37,7 +37,7 @@ const PacoteSection = () => (
         ].map((item, i) => (
           <motion.div
             key={i}
-            className="bg-card p-8 rounded-lg shadow-sm text-center"
+            className="bg-card card-glow rounded-lg p-8 text-center"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -59,7 +59,7 @@ const PacoteSection = () => (
       </div>
 
       <motion.div
-        className="bg-card text-center p-10 sm:p-14 rounded-lg shadow-lg max-w-xl mx-auto"
+        className="bg-card card-glow rounded-lg text-center p-10 sm:p-14 max-w-xl mx-auto"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
