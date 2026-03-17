@@ -23,9 +23,9 @@ const PsSection = () => (
       <div className="bg-muted p-8 rounded-lg border-l-4 border-primary">
         <p className="text-foreground text-lg mb-3">
           <strong>P.P.S.:</strong> Se você chegou até aqui e leu sobre as 30 aulas, você já sabe que essa sequência faz
-          sentido. Seu cérebro só tá procurando permissão.
+          sentido.
         </p>
-        <p className="text-primary font-bold font-heading text-3xl text-center mt-4">Eu te dou: VAI.</p>
+        <p className="text-primary font-bold font-heading text-3xl text-center mt-4">Seu cérebro: VAI.</p>
       </div>
 
       <div className="bg-muted p-8 rounded-lg border-l-4 border-primary">
@@ -43,7 +43,9 @@ const PsSection = () => (
 
       <div className="text-center">
         <a
-          href="#cta-final"
+          href="https://chk.eduzz.com/VWGZ2XYO07?utm_source=cajon&utm_medium=an&utm_campaign=cam+1+cajon&utm_id=pv"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block bg-primary text-primary-foreground font-heading font-bold text-lg px-10 py-5 rounded-lg shadow-cta hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-cta-hover transition-all uppercase"
         >
           🔥 GARANTIR MINHA VAGA AGORA - R$ 147 🔥

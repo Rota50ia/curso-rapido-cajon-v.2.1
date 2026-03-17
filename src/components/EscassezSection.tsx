@@ -17,7 +17,7 @@ const EscassezSection = () => (
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
       >
-        <p className="text-xl mb-3">Das 30 vagas de fevereiro, restam</p>
+        <p className="text-xl mb-3">Das 30 vagas deste mês, restam</p>
         <p className="text-8xl font-extrabold font-heading leading-none my-4">7</p>
         <p className="text-lg font-semibold">Amanhã pode não ter mais.</p>
       </motion.div>

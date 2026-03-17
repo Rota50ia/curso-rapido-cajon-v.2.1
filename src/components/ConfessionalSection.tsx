@@ -26,7 +26,7 @@ const ConfessionalSection = () => (
           <p>
             Elas não querem ser percussionistas profissionais.
             <br />
-            Elas querem tocar na igreja. No churrasco. Na rodinha de amigos.
+            Elas querem tocar no churrasco. No evento. Na rodinha de amigos.
           </p>
           <p>E aí eu refiz tudo.</p>
           <p>Peguei 30 aulas. Organizei na ordem exata do aprendizado natural:</p>

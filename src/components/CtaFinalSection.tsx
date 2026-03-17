@@ -20,7 +20,9 @@ const CtaFinalSection = () => (
       </div>
 
       <a
-        href="#comprar"
+        href="https://chk.eduzz.com/VWGZ2XYO07?utm_source=cajon&utm_medium=an&utm_campaign=cam+1+cajon&utm_id=pv"
+        target="_blank"
+        rel="noopener noreferrer"
         className="block max-w-xl mx-auto bg-primary text-primary-foreground font-heading font-extrabold text-xl sm:text-2xl px-10 py-6 rounded-lg shadow-cta hover:scale-105 transition-transform uppercase animate-pulse-glow"
       >
         🔥 GARANTIR MINHA VAGA AGORA - R$ 147 🔥

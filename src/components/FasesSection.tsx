@@ -39,7 +39,7 @@ const fases: FaseData[] = [
       { title: "AULA 9 – Macete", desc: "O \"atalho\" que percussionistas profissionais usam (e que ninguém te conta)." },
       { title: "AULA 10 – Shake + Cajón", desc: "Você adiciona TEXTURA ao cajón. Aqui que você começa a soar profissional." },
     ],
-    resultado: "Você toca xote, ijexá e já usa shake. 87% dos alunos são chamados pra tocar na igreja/evento aqui.",
+    resultado: "Você toca xote, ijexá e já usa shake. 87% dos alunos são chamados pra tocar em eventos aqui.",
   },
   {
     num: "03",

@@ -8,58 +8,97 @@ const fadeIn = {
 const MetaforaSection = () => (
   <section className="py-16 md:py-24 bg-muted">
     <div className="container">
-      <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-10 text-foreground">
-        Imagina Construir Uma Casa
-      </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <motion.h2
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeIn}
+        className="font-heading text-3xl sm:text-4xl font-bold text-center mb-10 text-foreground"
+      >
+        O Custo Oculto do "Gratuito"
+      </motion.h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        {/* Card Esquerdo -- YouTube */}
         <motion.div
-          className="p-6"
+          className="bg-card card-glow rounded-lg p-8 border border-border"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeIn}
         >
-          <p className="text-xl font-medium text-foreground mb-4">No YouTube, você encontra:</p>
-          <ul className="space-y-3 mb-6">
-            {[
-              "1 vídeo ensinando a fazer o telhado",
-              "3 vídeos sobre pintura avançada",
-              "12 vídeos sobre tipos de acabamento",
-            ].map((item, i) => (
-              <li key={i} className="flex items-start gap-2 text-foreground">
-                <span className="text-primary font-bold">▸</span> {item}
-              </li>
-            ))}
-            <li className="flex items-start gap-2 font-bold text-foreground">
-              <span className="text-primary font-bold">▸</span> Zero vídeos sobre como fazer a fundação primeiro
+          <h3 className="font-heading text-xl font-bold text-muted-foreground mb-6 text-center">
+            Voce sozinho no YouTube
+          </h3>
+          <ul className="space-y-4 text-foreground">
+            <li className="flex items-start gap-3">
+              <span className="text-primary shrink-0">&#10005;</span>
+              <span>15 horas procurando conteudo</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary shrink-0">&#10005;</span>
+              <span>R$450 em tempo perdido (se ganha R$30/h)</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary shrink-0">&#10005;</span>
+              <span>Alta probabilidade de desistencia</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary shrink-0">&#10005;</span>
+              <span>Resultado: "Mais ou menos"</span>
             </li>
           </ul>
-          <p className="text-xl font-medium text-foreground">E aí você tenta construir. Óbvio que desaba.</p>
         </motion.div>
 
+        {/* Card Direito -- Curso (destacado) */}
         <motion.div
-          className="bg-primary text-primary-foreground p-8 rounded-lg"
+          className="bg-primary text-primary-foreground rounded-lg p-8 ring-2 ring-primary shadow-cta"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeIn}
         >
-          <div className="text-6xl text-center mb-4">🏗️</div>
-          <h3 className="font-heading text-2xl font-bold mb-4">Cajón é a mesma coisa.</h3>
-          <p className="mb-4">
-            Se você não aprende na ordem certa (som → groove → ritmo → variação → técnica avançada), você vai:
-          </p>
-          <ol className="list-decimal pl-5 space-y-2 mb-4">
-            <li>Desenvolver vícios</li>
-            <li>Ficar travado</li>
-            <li>Achar que o problema é você</li>
-          </ol>
-          <p>
-            <strong>Não é.</strong>
-            <br />O problema é que ninguém te mostrou o passo a passo certo.
-          </p>
+          <h3 className="font-heading text-xl font-bold mb-6 text-center">
+            Com Curso Rapido de Cajon
+          </h3>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-3">
+              <span className="shrink-0">&#10003;</span>
+              <span>2 horas de aula direta</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="shrink-0">&#10003;</span>
+              <span>R$147 investimento unico</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="shrink-0">&#10003;</span>
+              <span>97% taxa de conclusao</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="shrink-0">&#10003;</span>
+              <span>Resultado: Dominio tecnico</span>
+            </li>
+          </ul>
         </motion.div>
       </div>
+
+      {/* Linha de fechamento */}
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeIn}
+        className="bg-card card-glow rounded-lg p-8 mt-10 max-w-3xl mx-auto text-center"
+      >
+        <p className="text-lg text-foreground mb-2">
+          <strong className="text-primary font-heading text-xl">Conta de Padaria:</strong>
+        </p>
+        <p className="text-2xl font-bold text-foreground mb-3 font-heading">
+          (15h x R$30) / R$147 = <span className="text-primary">3 vezes</span>
+        </p>
+        <p className="text-muted-foreground text-lg">
+          Voce esta pagando mais em tempo perdido do que pagaria em um curso estruturado.
+        </p>
+      </motion.div>
     </div>
   </section>
 );

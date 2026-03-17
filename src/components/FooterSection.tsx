@@ -14,7 +14,7 @@ const FooterSection = () => (
       <div className="text-sm text-muted-foreground mb-4 space-x-3">
         <a href="#termos" className="hover:text-primary transition-colors">Termos de Uso</a>
         <span>|</span>
-        <a href="#privacidade" className="hover:text-primary transition-colors">Política de Privacidade</a>
+        <a href="https://politica-de-privacidade.rota50ia.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Política de Privacidade</a>
       </div>
       <p className="text-xs text-muted-foreground pt-4 border-t border-border">
         Todos os direitos reservados – Edilson Morais 2026

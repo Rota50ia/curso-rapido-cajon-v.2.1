@@ -4,27 +4,27 @@
 
 @layer base {
   :root {
-    --background: 240 10% 4%;
-    --foreground: 0 0% 95%;
-    --card: 240 6% 9%;
-    --card-foreground: 0 0% 95%;
-    --popover: 240 6% 9%;
-    --popover-foreground: 0 0% 95%;
-    --primary: 18 100% 60%;
+    --background: 240 42% 6%;
+    --foreground: 40 20% 96%;
+    --card: 240 38% 9%;
+    --card-foreground: 40 20% 96%;
+    --popover: 240 38% 9%;
+    --popover-foreground: 40 20% 96%;
+    --primary: 24 100% 52%;
     --primary-foreground: 0 0% 100%;
-    --primary-dark: 18 85% 45%;
-    --secondary: 240 5% 12%;
-    --secondary-foreground: 0 0% 75%;
-    --muted: 240 5% 14%;
-    --muted-foreground: 0 0% 50%;
+    --primary-dark: 24 90% 38%;
+    --secondary: 240 35% 12%;
+    --secondary-foreground: 40 10% 75%;
+    --muted: 240 32% 14%;
+    --muted-foreground: 40 8% 56%;
     --accent: 122 46% 33%;
     --accent-foreground: 0 0% 100%;
     --accent-light: 122 20% 10%;
-    --destructive: 0 84% 60%;
+    --destructive: 0 70% 47%;
     --destructive-foreground: 0 0% 100%;
-    --border: 240 5% 18%;
-    --input: 240 5% 18%;
-    --ring: 18 100% 60%;
+    --border: 43 30% 22%;
+    --input: 43 30% 22%;
+    --ring: 24 100% 52%;
     --radius: 0.75rem;
 
     /* Phase colors – dark tinted */
@@ -36,18 +36,18 @@
     --fase-6: 0 30% 12%;
 
     /* CTA shadows */
-    --shadow-cta: 0 4px 20px hsl(18 100% 60% / 0.25);
-    --shadow-cta-hover: 0 8px 30px hsl(18 100% 60% / 0.4);
+    --shadow-cta: 0 4px 20px hsl(24 100% 52% / 0.35);
+    --shadow-cta-hover: 0 8px 30px hsl(24 100% 52% / 0.55);
 
     /* Sidebar defaults */
-    --sidebar-background: 240 6% 9%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 0 0% 95%;
-    --sidebar-primary-foreground: 240 6% 9%;
-    --sidebar-accent: 240 5% 14%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 240 5% 18%;
-    --sidebar-ring: 18 100% 60%;
+    --sidebar-background: 240 38% 9%;
+    --sidebar-foreground: 40 20% 96%;
+    --sidebar-primary: 40 20% 96%;
+    --sidebar-primary-foreground: 240 38% 9%;
+    --sidebar-accent: 240 32% 14%;
+    --sidebar-accent-foreground: 40 20% 96%;
+    --sidebar-border: 43 30% 22%;
+    --sidebar-ring: 43 50% 54%;
   }
 }
 
@@ -68,17 +68,17 @@
 
 @layer components {
   .card-glow {
-    border: 1px solid hsl(var(--border));
+    border: 1px solid hsl(24 40% 20%);
     box-shadow:
-      0 0 20px -5px hsl(18 100% 60% / 0.06),
-      0 0 40px -10px hsl(270 50% 50% / 0.04);
+      0 0 20px -5px hsl(24 100% 52% / 0.08),
+      0 0 40px -10px hsl(24 100% 52% / 0.04);
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
   }
   .card-glow:hover {
-    border-color: hsl(18 100% 60% / 0.25);
+    border-color: hsl(24 100% 52% / 0.40);
     box-shadow:
-      0 0 25px -5px hsl(18 100% 60% / 0.12),
-      0 0 50px -10px hsl(270 50% 50% / 0.08);
+      0 0 25px -5px hsl(24 100% 52% / 0.18),
+      0 0 50px -10px hsl(24 100% 52% / 0.10);
   }
 }
 
@@ -88,13 +88,13 @@
     background-image: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 70%) 100%);
   }
   .bg-hero-gradient {
-    background: linear-gradient(180deg, hsl(240 10% 7%) 0%, hsl(var(--background)) 100%);
+    background: linear-gradient(180deg, hsl(240 42% 8%) 0%, hsl(var(--background)) 100%);
   }
   .bg-cta-gradient {
-    background: linear-gradient(180deg, hsl(240 10% 7%) 0%, hsl(240 10% 3%) 100%);
+    background: linear-gradient(180deg, hsl(240 42% 8%) 0%, hsl(240 42% 4%) 100%);
   }
   .bg-escassez {
-    background-color: hsl(240 10% 6%);
+    background-color: hsl(240 42% 5%);
   }
   .shadow-cta {
     box-shadow: var(--shadow-cta);
