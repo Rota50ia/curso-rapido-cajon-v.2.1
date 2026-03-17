@@ -4,7 +4,7 @@ const PorqueSection = () => (
   <section className="py-16 md:py-24 bg-background">
     <div className="container max-w-3xl text-center">
       <h2 className="font-heading text-3xl sm:text-4xl font-bold mb-8 text-foreground">
-        Porque No Fundo... Isso Não É Sobre Cajón
+        Por Que No Fundo... Isso Não É Sobre Cajón
       </h2>
       <p className="text-xl font-medium text-foreground mb-8">
         É sobre você parando de ser <strong>consumidor</strong> e virando <strong>criador</strong>.

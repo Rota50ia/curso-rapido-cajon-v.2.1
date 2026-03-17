@@ -30,7 +30,7 @@ const TimelineSection = () => (
         ))}
       </div>
       <p className="text-center text-lg text-foreground">
-        Não to inventando. <strong>97% completam</strong> porque a sequência é VICIANTE (cada aula desbloqueia a próxima).
+        Não tô inventando. <strong>97% completam</strong> porque a sequência é VICIANTE (cada aula desbloqueia a próxima).
       </p>
     </div>
   </section>

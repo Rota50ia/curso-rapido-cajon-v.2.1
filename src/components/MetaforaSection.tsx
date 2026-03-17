@@ -27,12 +27,12 @@ const MetaforaSection = () => (
           variants={fadeIn}
         >
           <h3 className="font-heading text-xl font-bold text-muted-foreground mb-6 text-center">
-            Voce sozinho no YouTube
+            Você sozinho no YouTube
           </h3>
           <ul className="space-y-4 text-foreground">
             <li className="flex items-start gap-3">
               <span className="text-primary shrink-0">&#10005;</span>
-              <span>15 horas procurando conteudo</span>
+              <span>15 horas procurando conteúdo</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary shrink-0">&#10005;</span>
@@ -40,7 +40,7 @@ const MetaforaSection = () => (
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary shrink-0">&#10005;</span>
-              <span>Alta probabilidade de desistencia</span>
+              <span>Alta probabilidade de desistência</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-primary shrink-0">&#10005;</span>
@@ -58,7 +58,7 @@ const MetaforaSection = () => (
           variants={fadeIn}
         >
           <h3 className="font-heading text-xl font-bold mb-6 text-center">
-            Com Curso Rapido de Cajon
+            Com Curso Rápido de Cajón
           </h3>
           <ul className="space-y-4">
             <li className="flex items-start gap-3">
@@ -67,15 +67,15 @@ const MetaforaSection = () => (
             </li>
             <li className="flex items-start gap-3">
               <span className="shrink-0">&#10003;</span>
-              <span>R$147 investimento unico</span>
+              <span>R$147 investimento único</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="shrink-0">&#10003;</span>
-              <span>97% taxa de conclusao</span>
+              <span>97% taxa de conclusão</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="shrink-0">&#10003;</span>
-              <span>Resultado: Dominio tecnico</span>
+              <span>Resultado: Domínio técnico</span>
             </li>
           </ul>
         </motion.div>
@@ -96,7 +96,7 @@ const MetaforaSection = () => (
           (15h x R$30) / R$147 = <span className="text-primary">3 vezes</span>
         </p>
         <p className="text-muted-foreground text-lg">
-          Voce esta pagando mais em tempo perdido do que pagaria em um curso estruturado.
+          Você está pagando mais em tempo perdido do que pagaria em um curso estruturado.
         </p>
       </motion.div>
     </div>
