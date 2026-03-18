@@ -3,15 +3,21 @@ import { motion } from "framer-motion";
 const testimonials = [
   {
     text: 'Tentei 2 anos sozinho. Em 7 dias aqui eu toquei mais que em 2 anos no YouTube. Eu tinha 47 vídeos salvos de "como tocar xote". Nenhum explicava a BASE antes. Terminei a Aula 7 e toquei xote completo pela primeira vez. Chorei.',
-    name: "Carlos, 42 anos • São Paulo",
+    name: "Carlos, 42 anos",
+    location: "São Paulo",
+    initials: "CA",
   },
   {
     text: 'Fui chamado pra tocar num casamento antes de terminar o curso. Cheguei na Aula 18 (baião) e um amigo me chamou. Eu falei "cara, ainda não terminei o curso". Ele falou "mas você já toca melhor que muito percussionista que eu conheço". Ganhei R$ 300.',
-    name: "Roberto, 35 anos • Belo Horizonte",
+    name: "Roberto, 35 anos",
+    location: "Belo Horizonte",
+    initials: "RO",
   },
   {
     text: 'Eu sou professora. Quando vi a ordem das aulas, pensei: "esse cara entende de pedagogia". Cada aula desbloqueia a próxima. É viciante. Terminei em 22 dias.',
-    name: "Ana, 28 anos • Rio de Janeiro",
+    name: "Ana, 28 anos",
+    location: "Rio de Janeiro",
+    initials: "AN",
   },
 ];
 
@@ -25,15 +31,24 @@ const DepoimentosSection = () => (
         {testimonials.map((t, i) => (
           <motion.div
             key={i}
-            className="bg-card card-glow rounded-lg p-8"
+            className="relative border border-white/[0.08] bg-gradient-to-br from-card to-background rounded-2xl p-6"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.1 }}
           >
-            <div className="text-xl mb-3">⭐⭐⭐⭐⭐</div>
-            <p className="italic text-foreground mb-4 leading-relaxed">{`"${t.text}"`}</p>
-            <p className="text-sm font-semibold text-muted-foreground">{t.name}</p>
+            <span className="absolute top-4 right-6 text-6xl text-primary/20 font-serif leading-none select-none">"</span>
+            <div className="text-xl mb-3">&#11088;&#11088;&#11088;&#11088;&#11088;</div>
+            <p className="italic text-foreground mb-6 leading-relaxed relative z-10">{`"${t.text}"`}</p>
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-full bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center text-primary font-bold text-sm border border-primary/20">
+                {t.initials}
+              </div>
+              <div>
+                <p className="text-sm font-semibold text-foreground">{t.name}</p>
+                <p className="text-xs text-muted-foreground">{t.location}</p>
+              </div>
+            </div>
           </motion.div>
         ))}
       </div>

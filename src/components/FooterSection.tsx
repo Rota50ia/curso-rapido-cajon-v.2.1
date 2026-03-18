@@ -1,12 +1,13 @@
 const FooterSection = () => (
   <footer className="bg-card text-foreground py-12 text-center border-t border-border">
+    <div className="divider-glow mb-8" />
     <div className="container">
-      <h3 className="font-heading text-2xl sm:text-3xl font-bold mb-3">Edilson Morais</h3>
+      <h3 className="font-heading text-3xl font-bold mb-3 text-primary">Edilson Morais</h3>
       <p className="text-base mb-1">40 anos tocando. 217 alunos transformados.</p>
       <p className="text-base mb-4"><strong>Mas isso não importa.</strong></p>
       <p className="text-xl font-semibold text-primary mb-6">O que importa é: você vai tocar ou não?</p>
       <p className="mb-8">
-        📧{" "}
+        &#128231;{" "}
         <a href="mailto:edilsomdil@gmail.com" className="underline hover:text-primary transition-colors">
           edilsomdil@gmail.com
         </a>

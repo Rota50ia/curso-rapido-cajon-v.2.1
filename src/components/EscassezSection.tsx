@@ -12,13 +12,13 @@ const EscassezSection = () => (
         pessoas, eu não consigo dar atenção individualizada pra todo mundo.
       </p>
       <motion.div
-        className="bg-card card-glow rounded-lg p-10"
+        className="border border-primary/30 bg-primary/5 card-glow rounded-lg p-10"
         initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
       >
         <p className="text-xl mb-3">Das 30 vagas deste mês, restam</p>
-        <p className="text-8xl font-extrabold font-heading leading-none my-4">7</p>
+        <p className="text-8xl font-extrabold font-heading leading-none my-4 text-primary stat-number drop-shadow-[0_0_30px_hsl(24_100%_52%/0.6)]">7</p>
         <p className="text-lg font-semibold">Amanhã pode não ter mais.</p>
       </motion.div>
     </div>

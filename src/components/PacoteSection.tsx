@@ -49,7 +49,9 @@ const PacoteSection = () => (
             {item.details && (
               <ul className="text-left text-sm space-y-1 mt-4 text-muted-foreground">
                 {item.details.map((d, j) => (
-                  <li key={j}>• {d}</li>
+                  <li key={j} className="flex items-start gap-2">
+                    <span className="text-accent shrink-0">&#10003;</span> {d}
+                  </li>
                 ))}
               </ul>
             )}
@@ -59,15 +61,18 @@ const PacoteSection = () => (
       </div>
 
       <motion.div
-        className="bg-card card-glow rounded-lg text-center p-10 sm:p-14 max-w-xl mx-auto"
+        className="relative border border-primary/30 bg-card rounded-3xl text-center p-10 sm:p-14 max-w-xl mx-auto shadow-2xl ring-2 ring-primary/15"
         initial={{ opacity: 0, scale: 0.95 }}
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
       >
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 badge-pill rounded-full px-6 py-2 text-primary font-bold text-sm">
+          MELHOR VALOR
+        </div>
         <p className="text-xl text-muted-foreground mb-2">
-          Valor real: <span className="line-through">R$ 400</span>
+          Valor real: <span className="line-through text-2xl">R$ 400</span>
         </p>
-        <p className="text-5xl sm:text-6xl font-extrabold text-primary font-heading mb-3">R$ 147</p>
+        <p className="text-7xl font-extrabold text-primary font-heading mb-3 stat-number">R$ 147</p>
         <p className="text-muted-foreground italic">
           (Menos que 2 pizzas. E uma pizza você esquece. Cajón fica pra vida.)
         </p>

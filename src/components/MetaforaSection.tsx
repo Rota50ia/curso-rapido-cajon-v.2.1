@@ -20,7 +20,7 @@ const MetaforaSection = () => (
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
         {/* Card Esquerdo -- YouTube */}
         <motion.div
-          className="bg-card card-glow rounded-lg p-8 border border-border"
+          className="border border-red-500/25 bg-red-950/30 rounded-2xl p-8"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
@@ -31,19 +31,19 @@ const MetaforaSection = () => (
           </h3>
           <ul className="space-y-4 text-foreground">
             <li className="flex items-start gap-3">
-              <span className="text-primary shrink-0">&#10005;</span>
+              <span className="text-red-400 shrink-0">&#10005;</span>
               <span>15 horas procurando conteúdo</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-primary shrink-0">&#10005;</span>
+              <span className="text-red-400 shrink-0">&#10005;</span>
               <span>R$450 em tempo perdido (se ganha R$30/h)</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-primary shrink-0">&#10005;</span>
+              <span className="text-red-400 shrink-0">&#10005;</span>
               <span>Alta probabilidade de desistência</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-primary shrink-0">&#10005;</span>
+              <span className="text-red-400 shrink-0">&#10005;</span>
               <span>Resultado: "Mais ou menos"</span>
             </li>
           </ul>
@@ -51,30 +51,33 @@ const MetaforaSection = () => (
 
         {/* Card Direito -- Curso (destacado) */}
         <motion.div
-          className="bg-primary text-primary-foreground rounded-lg p-8 ring-2 ring-primary shadow-cta"
+          className="relative border border-primary/40 bg-primary/[0.08] rounded-2xl p-8 ring-1 ring-primary/20"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeIn}
         >
-          <h3 className="font-heading text-xl font-bold mb-6 text-center">
+          <div className="absolute -top-4 left-1/2 -translate-x-1/2 badge-pill rounded-full px-5 py-1.5 text-primary font-bold text-sm">
+            RECOMENDADO
+          </div>
+          <h3 className="font-heading text-xl font-bold mb-6 text-center text-foreground">
             Com Curso Rápido de Cajón
           </h3>
-          <ul className="space-y-4">
+          <ul className="space-y-4 text-foreground">
             <li className="flex items-start gap-3">
-              <span className="shrink-0">&#10003;</span>
+              <span className="text-accent shrink-0">&#10003;</span>
               <span>2 horas de aula direta</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="shrink-0">&#10003;</span>
+              <span className="text-accent shrink-0">&#10003;</span>
               <span>R$147 investimento único</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="shrink-0">&#10003;</span>
+              <span className="text-accent shrink-0">&#10003;</span>
               <span>97% taxa de conclusão</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="shrink-0">&#10003;</span>
+              <span className="text-accent shrink-0">&#10003;</span>
               <span>Resultado: Domínio técnico</span>
             </li>
           </ul>

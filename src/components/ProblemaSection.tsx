@@ -14,6 +14,7 @@ const dores = [
 
 const ProblemaSection = () => (
   <section className="py-16 md:py-24 bg-background">
+    <div className="divider-glow mb-16" />
     <div className="container max-w-3xl">
       <motion.div
         initial="hidden"
@@ -39,17 +40,19 @@ const ProblemaSection = () => (
             <motion.div
               key={i}
               variants={fadeIn}
-              className="bg-card card-glow rounded-lg p-8 text-center"
+              className="border border-red-500/20 bg-red-500/5 rounded-xl p-5 text-center"
             >
               <div className="text-5xl mb-4">{item.icon}</div>
-              <p className="text-foreground font-medium">{item.text}</p>
+              <p className="text-foreground font-medium flex items-center justify-center gap-2">
+                <span className="text-red-400 shrink-0">&#10005;</span> {item.text}
+              </p>
             </motion.div>
           ))}
         </div>
 
         <motion.div
           variants={fadeIn}
-          className="bg-secondary p-8 rounded-lg border-l-4 border-primary"
+          className="border-l-4 border-primary bg-primary/[0.08] rounded-r-xl p-8"
         >
           <p className="text-lg text-foreground leading-relaxed">
             <strong className="text-primary text-xl block mb-2">A verdade que ninguém te conta:</strong>
