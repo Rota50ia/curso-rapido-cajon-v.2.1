@@ -4,50 +4,50 @@
 
 @layer base {
   :root {
-    --background: 240 42% 6%;
-    --foreground: 40 20% 96%;
-    --card: 240 38% 9%;
-    --card-foreground: 40 20% 96%;
-    --popover: 240 38% 9%;
-    --popover-foreground: 40 20% 96%;
+    --background: 0 0% 3%;
+    --foreground: 0 0% 97%;
+    --card: 0 0% 6%;
+    --card-foreground: 0 0% 97%;
+    --popover: 0 0% 6%;
+    --popover-foreground: 0 0% 97%;
     --primary: 24 100% 52%;
     --primary-foreground: 0 0% 100%;
     --primary-dark: 24 90% 38%;
-    --secondary: 240 35% 12%;
-    --secondary-foreground: 40 10% 75%;
-    --muted: 240 32% 14%;
-    --muted-foreground: 40 8% 56%;
-    --accent: 122 46% 33%;
+    --secondary: 0 0% 9%;
+    --secondary-foreground: 0 0% 68%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 48%;
+    --accent: 174 60% 41%;
     --accent-foreground: 0 0% 100%;
-    --accent-light: 122 20% 10%;
+    --accent-light: 174 30% 8%;
     --destructive: 0 70% 47%;
     --destructive-foreground: 0 0% 100%;
-    --border: 43 30% 22%;
-    --input: 43 30% 22%;
+    --border: 263 15% 16%;
+    --input: 263 15% 16%;
     --ring: 24 100% 52%;
     --radius: 0.75rem;
 
     /* Phase colors – dark tinted */
-    --fase-1: 25 40% 10%;
-    --fase-2: 45 30% 10%;
-    --fase-3: 122 25% 10%;
-    --fase-4: 210 30% 12%;
-    --fase-5: 270 25% 12%;
-    --fase-6: 0 30% 12%;
+    --fase-1: 263 30% 10%;
+    --fase-2: 174 25% 9%;
+    --fase-3: 45 25% 9%;
+    --fase-4: 210 30% 11%;
+    --fase-5: 320 25% 11%;
+    --fase-6: 0 25% 11%;
 
     /* CTA shadows */
-    --shadow-cta: 0 4px 20px hsl(24 100% 52% / 0.35);
-    --shadow-cta-hover: 0 8px 30px hsl(24 100% 52% / 0.55);
+    --shadow-cta: 0 4px 20px hsl(263 70% 58% / 0.35);
+    --shadow-cta-hover: 0 8px 30px hsl(263 70% 58% / 0.55);
 
     /* Sidebar defaults */
-    --sidebar-background: 240 38% 9%;
-    --sidebar-foreground: 40 20% 96%;
-    --sidebar-primary: 40 20% 96%;
-    --sidebar-primary-foreground: 240 38% 9%;
-    --sidebar-accent: 240 32% 14%;
-    --sidebar-accent-foreground: 40 20% 96%;
-    --sidebar-border: 43 30% 22%;
-    --sidebar-ring: 43 50% 54%;
+    --sidebar-background: 0 0% 6%;
+    --sidebar-foreground: 0 0% 97%;
+    --sidebar-primary: 0 0% 97%;
+    --sidebar-primary-foreground: 0 0% 6%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 0 0% 97%;
+    --sidebar-border: 263 15% 16%;
+    --sidebar-ring: 263 50% 54%;
   }
 }
 
@@ -85,16 +85,16 @@
 @layer utilities {
   .text-gradient-hero {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(0 0% 70%) 100%);
+    background-image: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(263 40% 80%) 100%);
   }
   .bg-hero-gradient {
-    background: linear-gradient(180deg, hsl(240 42% 8%) 0%, hsl(var(--background)) 100%);
+    background: linear-gradient(180deg, hsl(263 25% 5%) 0%, hsl(var(--background)) 100%);
   }
   .bg-cta-gradient {
-    background: linear-gradient(180deg, hsl(240 42% 8%) 0%, hsl(240 42% 4%) 100%);
+    background: linear-gradient(180deg, hsl(263 20% 5%) 0%, hsl(0 0% 2%) 100%);
   }
   .bg-escassez {
-    background-color: hsl(240 42% 5%);
+    background-color: hsl(0 0% 2%);
   }
   .shadow-cta {
     box-shadow: var(--shadow-cta);
@@ -117,7 +117,7 @@
 /* Linha divisoria com gradiente */
 .divider-glow {
   height: 1px;
-  background: linear-gradient(90deg, transparent, hsl(24 100% 52% / 0.4), transparent);
+  background: linear-gradient(90deg, transparent, hsl(263 70% 58% / 0.4), transparent);
 }
 
 /* Badge pill moderno */
