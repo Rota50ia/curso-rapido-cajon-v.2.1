@@ -17,9 +17,15 @@ const EscassezSection = () => (
         whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true }}
       >
-        <p className="text-xl mb-3">Das 30 vagas deste mês, restam</p>
-        <p className="text-8xl font-extrabold font-heading leading-none my-4 text-primary stat-number drop-shadow-[0_0_30px_hsl(24_100%_52%/0.6)]">7</p>
-        <p className="text-lg font-semibold">Amanhã pode não ter mais.</p>
+        <p className="text-xl mb-4">
+          Este mês está <strong className="text-primary">quase cheio</strong>.
+        </p>
+        <p className="text-lg font-semibold mb-2">
+          Quando fechar, fecha — e a próxima abertura pode demorar semanas.
+        </p>
+        <p className="text-muted-foreground text-base mt-4">
+          Se você está lendo isso, ainda tem vaga. Amanhã pode não ter.
+        </p>
       </motion.div>
     </div>
   </section>

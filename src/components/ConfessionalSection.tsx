@@ -55,8 +55,13 @@ const ConfessionalSection = () => (
         <div className="space-y-4 text-foreground text-lg">
           <p>Testei com 217 alunos.</p>
           <p><strong>Funcionou.</strong></p>
+          <p>
+            Não porque eles eram talentosos. Mas porque a ordem estava certa.
+          </p>
         </div>
-        <p className="text-center mt-8 text-primary font-bold font-heading text-2xl">E você também pode.</p>
+        <p className="text-center mt-8 text-primary font-bold font-heading text-2xl">
+          Você não precisa de talento. Precisa da sequência certa.
+        </p>
       </motion.div>
     </div>
   </section>

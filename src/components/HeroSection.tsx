@@ -26,11 +26,11 @@ const HeroSection = () => (
         variants={fadeUp}
         className="font-heading text-3xl sm:text-4xl lg:text-6xl font-bold leading-tight mb-6 max-w-4xl mx-auto text-foreground tracking-tight text-balance"
       >
-        Pare de Procurar no YouTube: Domine o Cajón em 30 Dias com Método Simples ou{" "}
-        <span className="text-primary">Devolvemos Seu Dinheiro</span>
+        A Sequência de 30 Aulas Que Transforma Iniciantes em{" "}
+        <span className="text-primary">Percussionistas Confiantes</span> — em 30 Dias
       </motion.h1>
       <motion.p variants={fadeUp} className="text-xl sm:text-2xl mb-8 max-w-3xl mx-auto text-muted-foreground leading-relaxed">
-        Descubra o sistema passo a passo que já transformou 217 iniciantes em percussionistas confiantes – mesmo que você nunca tenha tocado um instrumento na vida.
+        217 alunos provaram: o problema nunca foi falta de talento. Foi falta de método. Mesmo que você nunca tenha tocado um instrumento na vida.
       </motion.p>
       <motion.div variants={fadeUp} className="w-full max-w-3xl mx-auto mb-8 rounded-xl overflow-hidden shadow-2xl aspect-video ring-1 ring-white/10">
         <iframe
@@ -59,7 +59,7 @@ const HeroSection = () => (
           <span className="text-accent">&#10003;</span> Acesso Vitalício
         </span>
         <span className="flex items-center gap-2 bg-white/5 backdrop-blur-sm rounded-full px-4 py-2 border border-white/10">
-          <span className="text-accent">&#10003;</span> 15 Dias de Garantia
+          <span className="text-accent">&#10003;</span> 30 Dias de Garantia
         </span>
         <span className="flex items-center gap-2 bg-white/5 backdrop-blur-sm rounded-full px-4 py-2 border border-white/10">
           <span className="text-accent">&#10003;</span> Suporte 24h

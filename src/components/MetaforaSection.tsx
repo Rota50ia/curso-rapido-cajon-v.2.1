@@ -96,10 +96,11 @@ const MetaforaSection = () => (
           <strong className="text-primary font-heading text-xl">Conta de Padaria:</strong>
         </p>
         <p className="text-2xl font-bold text-foreground mb-3 font-heading">
-          (15h x R$30) / R$147 = <span className="text-primary">3 vezes</span>
+          15h × R$30/h = <span className="text-red-400">R$450 em tempo perdido</span>
         </p>
         <p className="text-muted-foreground text-lg">
-          Você está pagando mais em tempo perdido do que pagaria em um curso estruturado.
+          O YouTube "gratuito" custa <strong className="text-foreground">3× mais</strong> do que o curso — só em tempo.
+          Fora a frustração, os vícios e a desistência que não têm preço.
         </p>
       </motion.div>
     </div>

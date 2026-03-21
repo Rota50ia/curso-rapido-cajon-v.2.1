@@ -6,27 +6,33 @@ const testimonials = [
     name: "Carlos, 42 anos",
     location: "São Paulo",
     initials: "CA",
+    result: "Tocou xote completo no Dia 7",
   },
   {
     text: 'Fui chamado pra tocar num casamento antes de terminar o curso. Cheguei na Aula 18 (baião) e um amigo me chamou. Eu falei "cara, ainda não terminei o curso". Ele falou "mas você já toca melhor que muito percussionista que eu conheço". Ganhei R$ 300.',
     name: "Roberto, 35 anos",
     location: "Belo Horizonte",
     initials: "RO",
+    result: "Ganhou R$300 tocando num casamento antes de terminar",
   },
   {
     text: 'Eu sou professora. Quando vi a ordem das aulas, pensei: "esse cara entende de pedagogia". Cada aula desbloqueia a próxima. É viciante. Terminei em 22 dias.',
     name: "Ana, 28 anos",
     location: "Rio de Janeiro",
     initials: "AN",
+    result: "Curso completo em 22 dias",
   },
 ];
 
 const DepoimentosSection = () => (
   <section className="py-16 md:py-24 bg-background">
     <div className="container">
-      <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-12 text-foreground">
-        O Que Alunos Reais Falam
+      <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-4 text-foreground">
+        Resultados Reais de Alunos Reais
       </h2>
+      <p className="text-center text-muted-foreground text-lg mb-12">
+        Não são depoimentos genéricos. São histórias com datas, números e nomes.
+      </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {testimonials.map((t, i) => (
           <motion.div
@@ -47,6 +53,9 @@ const DepoimentosSection = () => (
               <div>
                 <p className="text-sm font-semibold text-foreground">{t.name}</p>
                 <p className="text-xs text-muted-foreground">{t.location}</p>
+                {t.result && (
+                  <p className="text-xs text-accent font-semibold mt-0.5">&#10003; {t.result}</p>
+                )}
               </div>
             </div>
           </motion.div>

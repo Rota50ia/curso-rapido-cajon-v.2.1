@@ -3,9 +3,12 @@ import { motion } from "framer-motion";
 const PacoteSection = () => (
   <section className="py-16 md:py-24 bg-muted">
     <div className="container">
-      <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-12 text-foreground">
-        O Que Você Recebe (Pacote Completo)
+      <h2 className="font-heading text-3xl sm:text-4xl font-bold text-center mb-4 text-foreground">
+        Tudo Que Você Recebe Hoje
       </h2>
+      <p className="text-center text-muted-foreground text-lg mb-12 max-w-xl mx-auto">
+        Um pacote completo montado pra você sair do zero e tocar de verdade — sem ficar perdido no caminho.
+      </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-12">
         {[
@@ -26,7 +29,7 @@ const PacoteSection = () => (
             icon: "💬",
             title: "COMUNIDADE WHATSAPP VIP",
             desc: "Suporte em até 24h + outros alunos aprendendo junto",
-            sub: "(porque aprender sozinho é uma merda)",
+            sub: "(porque aprender sozinho é frustrante — você precisa de alguém que te corrija)",
           },
           {
             icon: "🎓",
@@ -69,9 +72,24 @@ const PacoteSection = () => (
         <div className="absolute -top-4 left-1/2 -translate-x-1/2 badge-pill rounded-full px-6 py-2 text-primary font-bold text-sm">
           MELHOR VALOR
         </div>
-        <p className="text-xl text-muted-foreground mb-2">
-          Valor real: <span className="line-through text-2xl">R$ 400</span>
-        </p>
+        <div className="text-left text-sm text-muted-foreground space-y-1 mb-6 max-w-xs mx-auto">
+          <div className="flex justify-between">
+            <span>30 aulas em vídeo (R$10/aula)</span>
+            <span className="line-through">R$300</span>
+          </div>
+          <div className="flex justify-between">
+            <span>Comunidade WhatsApp VIP</span>
+            <span className="line-through">R$50</span>
+          </div>
+          <div className="flex justify-between">
+            <span>Certificado digital</span>
+            <span className="line-through">R$50</span>
+          </div>
+          <div className="flex justify-between font-semibold text-foreground border-t border-white/10 pt-2 mt-2">
+            <span>Valor total</span>
+            <span className="line-through">R$400</span>
+          </div>
+        </div>
         <p className="text-7xl font-extrabold text-primary font-heading mb-3 stat-number">R$ 147</p>
         <p className="text-muted-foreground italic">
           (Menos que 2 pizzas. E uma pizza você esquece. Cajón fica pra vida.)
