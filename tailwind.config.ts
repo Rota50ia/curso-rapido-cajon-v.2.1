@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        heading: ["Sora", "sans-serif"],
-        body: ["DM Sans", "sans-serif"],
+        heading: ["Bebas Neue", "sans-serif"],
+        body: ["Inter", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -87,8 +87,8 @@ export default {
           to: { height: "0" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 4px 20px hsl(24 100% 52% / 0.45)" },
-          "50%": { boxShadow: "0 4px 35px hsl(24 100% 52% / 0.70)" },
+          "0%, 100%": { boxShadow: "0 4px 20px hsl(18 100% 58% / 0.50)" },
+          "50%": { boxShadow: "0 4px 35px hsl(18 100% 58% / 0.75)" },
         },
       },
       animation: {
