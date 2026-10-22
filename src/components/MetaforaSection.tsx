@@ -70,7 +70,7 @@ const MetaforaSection = () => (
             </li>
             <li className="flex items-start gap-3">
               <span className="text-accent shrink-0">&#10003;</span>
-              <span>R$147 investimento único</span>
+              <span>R$44,10 investimento único</span>
             </li>
             <li className="flex items-start gap-3">
               <span className="text-accent shrink-0">&#10003;</span>
@@ -99,7 +99,7 @@ const MetaforaSection = () => (
           15h × R$30/h = <span className="text-red-400">R$450 em tempo perdido</span>
         </p>
         <p className="text-muted-foreground text-lg">
-          O YouTube "gratuito" custa <strong className="text-foreground">3× mais</strong> do que o curso — só em tempo.
+          O YouTube "gratuito" custa <strong className="text-foreground">mais de 10×</strong> o valor do curso — só em tempo.
           Fora a frustração, os vícios e a desistência que não têm preço.
         </p>
       </motion.div>

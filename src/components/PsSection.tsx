@@ -16,7 +16,7 @@ const PsSection = () => (
           </div>
         </div>
         <p className="text-xl font-semibold text-center text-foreground">
-          A diferença entre as duas opções? <strong>R$ 147</strong> e a decisão de clicar no botão abaixo.
+          A diferença entre as duas opções? A oferta de <strong>70% OFF</strong>: de R$ 147 por R$ 44,10 à vista — e a decisão de clicar no botão abaixo.
         </p>
         <p className="text-muted-foreground text-center text-sm mt-2">
           Com garantia de 30 dias. Se não gostar, devolvo tudo. Sem perguntas.
@@ -25,12 +25,12 @@ const PsSection = () => (
 
       <div className="text-center">
         <a
-          href="https://chk.eduzz.com/VWGZ2XYO07?utm_source=cajon&utm_medium=an&utm_campaign=cam+1+cajon&utm_id=pv"
+          href="https://sun.eduzz.com/VWGZ2XYO07?cupom=CAJON70OFFBLACK"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-primary text-primary-foreground font-heading font-bold text-lg px-10 py-5 rounded-lg shadow-cta hover:bg-primary-dark hover:-translate-y-0.5 hover:shadow-cta-hover transition-all uppercase"
         >
-          🔥 GARANTIR MINHA VAGA AGORA - R$ 147 🔥
+          🔥 QUERO COMEÇAR AGORA - R$ 44,10 🔥
         </a>
       </div>
     </div>

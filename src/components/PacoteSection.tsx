@@ -90,10 +90,10 @@ const PacoteSection = () => (
             <span className="line-through">R$400</span>
           </div>
         </div>
-        <p className="text-7xl font-extrabold text-primary font-heading mb-3 stat-number">R$ 147</p>
-        <p className="text-muted-foreground italic">
-          (Menos que 2 pizzas. E uma pizza você esquece. Cajón fica pra vida.)
-        </p>
+        <div className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-primary">Oferta especial · 70% OFF</div>
+        <p className="text-lg text-muted-foreground line-through">De R$ 147,00</p>
+        <p className="text-7xl font-extrabold text-primary font-heading stat-number">R$ 44,10</p>
+        <p className="font-semibold text-foreground">à vista · pagamento único</p>
       </motion.div>
     </div>
   </section>

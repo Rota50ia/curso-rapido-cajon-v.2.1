@@ -32,7 +32,7 @@ const ConfessionalSection = () => (
                 <p className="font-heading text-white text-lg leading-tight tracking-wide">
                   EDILSON MORAIS
                 </p>
-                <p className="text-[11px] font-semibold tracking-[0.18em] uppercase mt-0.5" style={{ color: "#FF6B2B" }}>
+                <p className="text-[11px] font-semibold tracking-[0.18em] uppercase mt-0.5" style={{ color: "#A855F7" }}>
                   40 anos de percussão · 217 alunos
                 </p>
               </div>
